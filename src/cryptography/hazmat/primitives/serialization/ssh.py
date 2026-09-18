@@ -15,6 +15,14 @@ from dataclasses import dataclass
 from cryptography import utils
 from cryptography.exceptions import UnsupportedAlgorithm
 from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives._serialization import (
+    Encoding,
+    KeySerializationEncryption,
+    NoEncryption,
+    PrivateFormat,
+    PublicFormat,
+    _KeySerializationEncryption,
+)
 from cryptography.hazmat.primitives.asymmetric import (
     dsa,
     ec,
@@ -28,14 +36,6 @@ from cryptography.hazmat.primitives.ciphers import (
     Cipher,
     algorithms,
     modes,
-)
-from cryptography.hazmat.primitives.serialization import (
-    Encoding,
-    KeySerializationEncryption,
-    NoEncryption,
-    PrivateFormat,
-    PublicFormat,
-    _KeySerializationEncryption,
 )
 
 try:

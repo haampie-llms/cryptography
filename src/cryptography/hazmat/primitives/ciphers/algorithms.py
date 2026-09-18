@@ -26,10 +26,10 @@ from cryptography.hazmat.decrepit.ciphers.algorithms import (
 from cryptography.hazmat.decrepit.ciphers.algorithms import (
     TripleDES as TripleDES,
 )
-from cryptography.hazmat.primitives._cipheralgorithm import _verify_key_size
-from cryptography.hazmat.primitives.ciphers import (
+from cryptography.hazmat.primitives._cipheralgorithm import (
     BlockCipherAlgorithm,
     CipherAlgorithm,
+    _verify_key_size,
 )
 
 
